@@ -35,15 +35,20 @@ Rock-Paper-Scissors
 import random
 
 def rocksp():
-    hand = ["가위", "바위", "보"]
-    com_hand = int(random.randrange(3))
-    user_hand = int(input("무엇을 내시겠습니까? (0:가위, 1:바위, 2:보) "))
-    print("컴퓨터가 낸 것은 "+ hand[com_hand]+ " 입니다.")
-    if (com_hand==user_hand):
-        print("Draw!!!")
-    elif ((user_hand-com_hand==1) or (user_hand-com_hand==-2)):
-        print("User Wins!!!")
-    else:
-        print("Computer Wins!!!")
+    while True:
+        hand = ["가위", "바위", "보"]
+        com_hand = int(random.randrange(3))
+        user_hand = int(input("무엇을 내시겠습니까? (0:가위, 1:바위, 2:보) "))
+        print("컴퓨터가 낸 것은 "+ hand[com_hand]+ " 입니다.")
+        if (com_hand==user_hand):
+            print("Draw!!!")
+        elif ((user_hand-com_hand==1) or (user_hand-com_hand==-2)):
+            print("User Wins!!!")
+        else:
+            print("Computer Wins!!!")
+        more = input("더 하시겠습니까? (Y/N)")
+        if more == "N":
+            print("가위바위보를 종료합니다.")
+            break
 
 rocksp()
