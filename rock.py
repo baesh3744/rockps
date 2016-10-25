@@ -5,7 +5,12 @@ Rock-Paper-Scissors
 
 * **members :** Bae SeongHun
 * **date :** 2016.10.12
-* **input :** 0(scissors), 1(rock), 2(paper)
+* **input :**
+
+* before start input user name
+* while loop : 0(scissors), 1(rock), 2(paper)
+* more game? (Y/N)
+
 * **output**
 
     +-------------+-------------+-------------------+
